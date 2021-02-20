@@ -12,6 +12,7 @@ set -e
         df -h
         ####
         cd ~
+        #TODO
         git clone https://github.com/OnePlus-onyx/build-CI -b b2g
         chmod +x ~/build-CI/build-gsi-b2g.sh
         cp ~/build-CI/build-gsi-b2g.sh ~/gecko-b2g
