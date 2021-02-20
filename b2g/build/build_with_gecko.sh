@@ -19,5 +19,4 @@ set -e
         #export OUT_DIR_COMMON_BASE=${out_work}
         export PREFERRED_B2G="${work}/pre-gecko/${gecko_version}"
         export SKIP_ABI_CHECKS=true 
-        gtimeout 245m  ./build-gsi.sh ${build_device_tag} systemimage
-        ./build-gsi.sh ${build_device_tag} vndk-test-sepolicy
+        gtimeout 245m  ./build.sh ${build_device_tag}
