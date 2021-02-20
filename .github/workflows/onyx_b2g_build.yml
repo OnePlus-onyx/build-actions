@@ -249,7 +249,7 @@ jobs:
         ./mach bootstrap --no-interactive --application-choice 'GeckoView/Firefox for Android'
         df -h
        
-    - name: Build Gecko for gsi
+    - name: Build Gecko
       run: |
           ./b2g/build/build_gecko.sh
       
