@@ -3,15 +3,9 @@
 name: CI
 
 # Controls when the action will run. 
-on:
-  # Triggers the workflow on push or pull request events but only for the onyx-b2g-build branch
-  push:
-    branches: [ onyx-b2g-build ]
-  pull_request:
-    branches: [ onyx-b2g-build ]
-
-  # Allows you to run this workflow manually from the Actions tab
+on: 
   workflow_dispatch:
+  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
