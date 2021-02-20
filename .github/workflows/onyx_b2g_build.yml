@@ -1,4 +1,3 @@
-  
 name: b2g-ci
 on: 
   repository_dispatch:
@@ -25,11 +24,11 @@ env:
   outimage: out
   out_path: /Volumes/out/B2G
   
-  image: b2g_gsi
-  sourceimage: b2g_gsi
-  work: /Volumes/b2g_gsi
+  image: b2g_onyx
+  sourceimage: b2g_onyx
+  work: /Volumes/b2g_onyx
   out_work: /Volumes/out
-  remotepath: b2g_gsi_${{github.event.client_payload.device_name}}
+  remotepath: b2g_${{github.event.client_payload.device_name}}
   
 
 jobs: 
