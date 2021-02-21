@@ -2,7 +2,12 @@
 set -e 
 
         df -h
+        ##onyx patch
+        root=`pwd`
         cd ~/gecko-b2g
+        git am ${root}/b2g/source/0001_onyx_gecko_patch.patch
+        git am ${root}/b2g/source/0002_onyx_gecko_patch2.patch
+        
         export SHELL=/bin/bash
         sudo apt update
         export LOCAL_NDK_BASE_URL='ftp://ftp.kaiostech.com/ndk/android-ndk'
